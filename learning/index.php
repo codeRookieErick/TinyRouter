@@ -1,15 +1,13 @@
+<!Doctype html>
+
+<html>
+	<head>
+	</head>
+	<body>
 <?PHP
-require(".\code\WebControl.php");
-require(".\code\TextNode.php");
-
-
-function createLink($text, $address){
-	$result = new WebControl('a');
-	$result->add(new TextNode($text));
-	$result->attributes->href = $address;
-	return $result;
-}
-
-print(createLink('Hola', 'https://www.google.com')->draw());
-print(createLink('Hola', 'https://www.google.com')->draw());
+	session_start();
+	include("res/parts/header.php");
+	include("res/parts/subHeader.php");
 ?>
+	</body>
+</html>
